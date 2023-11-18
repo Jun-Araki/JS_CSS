@@ -1,0 +1,42 @@
+$cWhite: white;
+$cBlack: black;
+
+.try {
+  & .btn {
+    position: relative;
+    display: inline-block;
+    background-color: $cWhite;
+    border: 1px solid $cBlack;
+    font-weight: 600;
+    padding: 10px 40px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: $cBlack;
+    text-decoration: none !important;
+
+    /* ここにボタンのスタイルを追加していこう */
+    &.float:hover {
+      background-color: black;
+      color: white;
+      box-shadow: 4px 4px 10px 0px black;
+    }
+
+    &.filled {
+      background-color: black;
+      color: white;
+      box-shadow: 4px 4px 10px 0px black;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        box-shadow: none;
+      }
+    }
+    &.letter-spacing:hover {
+      background-color: black;
+      letter-spacing: 3px;
+      color: white;
+    }
+  }
+}
